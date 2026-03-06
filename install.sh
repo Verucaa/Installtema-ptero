@@ -86,6 +86,7 @@ start_script() {
   echo -e "${BOLD}${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BOLD}${BLUE}[+]                AUTO INSTALLER THEME             [+]${NC}"
   echo -e "${BOLD}${BLUE}[+]                  © RENDZZ OFFC                  [+]${NC}"
+  echo -e "${BOLD}${BLUE}[+]                  © VERUCAA                      [+]${NC}"
   echo -e "${BOLD}${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BOLD}${BLUE}[+] =============================================== [+]${NC}"
   echo -e ""
@@ -93,6 +94,7 @@ start_script() {
   echo -e "Mengalami eror? Lapor ke admin agar diperbaiki."
   echo -e ""
   echo -e "𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠: @rendzz_offc"
+  echo -e "𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠: @Verucaaa"
   sleep 2
 
   print_info "Menginstall dan mengupdate jq..."
@@ -129,7 +131,7 @@ check_token() {
   echo -e "${BOLD}${YELLOW}MASUKKAN AKSES TOKEN: ${NC}"
   read -r USER_TOKEN
 
-  if [ "$USER_TOKEN" = "rendzzoffc" ]; then
+  if [ "$USER_TOKEN" = "installin" ]; then
     echo -e "${BOLD}${GREEN}AKSES BERHASIL${NC}}"
   else
     echo -e "${BOLD}${GREEN}Token yang anda masukkan salah.${NC}"
@@ -176,9 +178,9 @@ install_theme() {
     echo -n -e "${BOLD}Masukkan pilihan (1-9/b1-6 atau x)${NC}${BOLD}: ${NC}"
     read SELECT_THEME
     case "$SELECT_THEME" in
-      1) THEME_NAME="Stellar"; THEME_URL="https://github.com/RendzzXs/Installtheme/raw/main/Theme/stellar.zip"; break;;
-      2) THEME_NAME="Billing"; THEME_URL="https://github.com/RendzzXs/Installtheme/raw/main/Theme/billing.zip"; break;;
-      3) THEME_NAME="Enigma"; THEME_URL="https://github.com/RendzzXs/Installtheme/raw/main/Theme/enigma.zip"; break;;
+      1) THEME_NAME="Stellar"; THEME_URL="https://github.com/Verucaa/Installtema-ptero/raw/main/Theme/stellar.zip"; break;;
+      2) THEME_NAME="Billing"; THEME_URL="https://github.com/Verucaa/Installtema-ptero/raw/main/Theme/billing.zip"; break;;
+      3) THEME_NAME="Enigma"; THEME_URL="https://github.com/Verucaa/Installtema-ptero/raw/main/Theme/enigma.zip"; break;;
       4) THEME_NAME="Elysium"; THEME_URL="https://github.com/RendzzXs/Installtheme/raw/main/Theme/elysium.zip"; break;;
       5) THEME_NAME="Frostcore"; THEME_URL="https://github.com/RendzzXs/Installtheme/raw/main/Theme/frostcore.zip"; break;;
       6) THEME_NAME="Nightcore"; THEME_URL="https://github.com/RendzzXs/Installtheme/raw/main/Theme/nightcore.zip"; break;;
